@@ -1,0 +1,784 @@
+/* =========================================
+   AROMA & GRANO
+   DISEÑO PREMIUM
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #faf6ef;
+    color: #3d281e;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+}
+
+section {
+    padding: 90px 8%;
+}
+
+:root {
+    --cafe: #3d281e;
+    --cafe-oscuro: #241710;
+    --dorado: #c69b65;
+    --crema: #faf6ef;
+    --beige: #eee3d2;
+    --texto: #75665b;
+}
+
+/* BARRA SUPERIOR */
+
+.topbar {
+    background: var(--cafe-oscuro);
+    color: #e6c99c;
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+/* ENCABEZADO */
+
+header {
+    background: var(--crema);
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 35px;
+}
+
+.logo h2 {
+    font-size: 25px;
+    color: var(--cafe);
+}
+
+.logo span {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--dorado);
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cafe);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--dorado);
+}
+
+.btn-header {
+    background: var(--cafe);
+    color: white;
+    padding: 13px 22px;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-header:hover {
+    background: var(--dorado);
+}
+
+/* PORTADA */
+
+.hero {
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1800&q=85");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(20, 12, 8, 0.85),
+        rgba(20, 12, 8, 0.35)
+    );
+}
+
+.hero-content {
+    position: relative;
+    max-width: 700px;
+    animation: aparecer 1s ease;
+}
+
+.etiqueta {
+    color: var(--dorado);
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    color: #d6b17e;
+}
+
+.hero-content p {
+    max-width: 520px;
+    line-height: 1.8;
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* BOTONES */
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background: var(--dorado);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a67b45;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--cafe);
+}
+
+.hero-bottom {
+    position: absolute;
+    bottom: 25px;
+    left: 8%;
+    right: 8%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #ddd;
+}
+
+/* HORARIO */
+
+.horario {
+    background: #eee3d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.horario-icon {
+    font-size: 45px;
+}
+
+.horario h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.horario p {
+    color: var(--texto);
+    margin: 5px 0;
+}
+
+#estadoLocal {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.horario-separador {
+    width: 1px;
+    height: 65px;
+    background: #c9b49b;
+}
+
+/* HISTORIA */
+
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.historia-imagen {
+    position: relative;
+}
+
+.historia-imagen img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.imagen-frase {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background: var(--cafe);
+    color: white;
+    padding: 25px;
+}
+
+.imagen-frase span {
+    color: var(--dorado);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.imagen-frase h3 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.subtitulo {
+    color: var(--dorado);
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.historia-texto h2 {
+    font-size: 45px;
+    line-height: 1.3;
+    margin: 20px 0;
+}
+
+.historia-texto h2 span {
+    color: var(--dorado);
+}
+
+.historia-texto p {
+    color: var(--texto);
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.historia-dato {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.historia-dato span {
+    color: var(--dorado);
+    font-size: 25px;
+}
+
+.historia-dato p {
+    margin: 0;
+}
+
+/* CARTA */
+
+.carta {
+    background: #f0e6d8;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-header h2 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.section-header h2 span {
+    color: var(--dorado);
+}
+
+.section-header p {
+    color: var(--texto);
+}
+
+/* PESTAÑAS */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+.tab {
+    padding: 13px 25px;
+    border: 1px solid #c6a47c;
+    background: transparent;
+    color: var(--cafe);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.tab:hover,
+.tab.active {
+    background: var(--cafe);
+    color: white;
+    border-color: var(--cafe);
+}
+
+/* PRODUCTOS */
+
+.grupo {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.grupo.active {
+    display: grid;
+    animation: aparecer 0.5s ease;
+}
+
+.producto {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.producto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.producto:hover img {
+    transform: scale(1.05);
+}
+
+.producto-info {
+    padding: 25px;
+}
+
+.producto-info h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.producto-info p {
+    color: var(--texto);
+    line-height: 1.6;
+    font-size: 14px;
+    min-height: 45px;
+}
+
+.producto-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.producto-footer span {
+    font-size: 22px;
+    color: var(--dorado);
+    font-weight: bold;
+}
+
+.pedir {
+    border: none;
+    background: var(--cafe);
+    color: white;
+    padding: 11px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pedir:hover {
+    background: var(--dorado);
+}
+
+/* FRASE */
+
+.frase {
+    background: var(--cafe);
+    color: white;
+    text-align: center;
+}
+
+.frase span {
+    color: var(--dorado);
+    font-size: 30px;
+}
+
+.frase h2 {
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.frase p {
+    color: #c8b6a4;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+/* RESERVAS */
+
+.reservas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.reserva-info h2 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.reserva-info h2 span {
+    color: var(--dorado);
+}
+
+.reserva-info > p {
+    color: var(--texto);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.reserva-beneficio {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.reserva-beneficio span {
+    font-size: 25px;
+    color: var(--dorado);
+}
+
+.reserva-beneficio p {
+    color: var(--cafe);
+}
+
+.reserva-formulario {
+    background: white;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.reserva-formulario h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.reserva-formulario > p {
+    color: var(--texto);
+    margin-bottom: 25px;
+}
+
+.reserva-formulario label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.reserva-formulario input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-family: inherit;
+}
+
+.reserva-formulario input:focus {
+    outline: none;
+    border-color: var(--dorado);
+}
+
+.reserva-formulario button {
+    width: 100%;
+}
+
+/* RESUMEN */
+
+#resumenReserva {
+    display: none;
+    background: #f0e6d8;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 5px;
+    line-height: 1.8;
+}
+
+#resumenReserva h3 {
+    color: var(--cafe);
+    margin-bottom: 15px;
+}
+
+/* CONTACTO */
+
+.contacto {
+    background: #f0e6d8;
+}
+
+.contacto-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contacto-info {
+    background: var(--cafe);
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.contacto-info h3 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.contacto-info p {
+    margin: 20px 0;
+    color: #e0d0c0;
+}
+
+.contacto-info .btn {
+    margin-top: 20px;
+}
+
+.mapa {
+    overflow: hidden;
+    border-radius: 8px;
+    min-height: 350px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    border: none;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--cafe-oscuro);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer-logo {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #b9a394;
+    font-size: 13px;
+    margin: 10px;
+}
+
+.footer-line {
+    width: 100px;
+    height: 1px;
+    background: var(--dorado);
+    margin: 25px auto;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: white;
+    padding: 15px 22px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.whatsapp:hover {
+    background: #128c7e;
+}
+
+/* ANIMACIONES */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .historia,
+    .reservas {
+        grid-template-columns: 1fr;
+    }
+
+    .grupo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacto-contenido {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .hero {
+        min-height: 520px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-bottom {
+        font-size: 9px;
+    }
+
+    .historia-texto h2,
+    .reserva-info h2 {
+        font-size: 35px;
+    }
+
+    .historia-imagen img {
+        height: 350px;
+    }
+
+    .grupo {
+        grid-template-columns: 1fr;
+    }
+
+    .producto img {
+        height: 250px;
+    }
+
+    .section-header h2 {
+        font-size: 35px;
+    }
+
+    .frase h2 {
+        font-size: 30px;
+    }
+
+    .horario-separador {
+        display: none;
+    }
+
+    .reserva-formulario {
+        padding: 25px;
+    }
+
+    .logo h2 {
+        font-size: 22px;
+    }
+
+    .whatsapp {
+        padding: 12px 18px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+}

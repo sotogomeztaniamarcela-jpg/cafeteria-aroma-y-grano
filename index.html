@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aroma & Grano | Café de Especialidad</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+
+    <div class="topbar">
+        ☕ CAFÉ COLOMBIANO · MOMENTOS ESPECIALES
+    </div>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <div class="logo">
+            <span class="logo-icon">☕</span>
+
+            <div>
+                <h2>Aroma & Grano</h2>
+                <span>CAFÉ DE ESPECIALIDAD</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#historia">Nosotros</a>
+            <a href="#carta">Carta</a>
+            <a href="#reservas">Reservas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a href="#reservas" class="btn-header">
+            Reservar mesa
+        </a>
+
+    </header>
+
+    <!-- PORTADA -->
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="etiqueta">
+                EL ARTE DEL BUEN CAFÉ
+            </span>
+
+            <h1>
+                Un buen café,<br>
+                <span>momentos inolvidables.</span>
+            </h1>
+
+            <p>
+                Descubre el verdadero sabor del café colombiano
+                en un espacio creado para disfrutar, compartir
+                y vivir experiencias únicas.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#carta" class="btn">
+                    Explorar nuestra carta
+                </a>
+
+                <a href="#reservas" class="btn-outline">
+                    Reservar una mesa
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-bottom">
+            <span>CAFÉ · AMOR · EXPERIENCIAS</span>
+            <span>Canalete, Córdoba</span>
+        </div>
+
+    </section>
+
+    <!-- HORARIO -->
+
+    <section class="horario">
+
+        <div class="horario-icon">☕</div>
+
+        <div>
+            <h3>¿Estamos abiertos?</h3>
+            <p id="estadoLocal">Consultando horario...</p>
+        </div>
+
+        <div class="horario-separador"></div>
+
+        <div>
+            <h3>Nuestros horarios</h3>
+            <p>Lunes a sábado · 8:00 AM - 8:00 PM</p>
+            <p>Domingo · 9:00 AM - 5:00 PM</p>
+        </div>
+
+    </section>
+
+    <!-- HISTORIA -->
+
+    <section id="historia" class="historia">
+
+        <div class="historia-imagen">
+            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=80"
+                alt="Interior de Aroma y Grano">
+
+            <div class="imagen-frase">
+                <span>UNA TAZA DE CAFÉ</span>
+                <h3>Un momento<br>para ti.</h3>
+            </div>
+        </div>
+
+        <div class="historia-texto">
+
+            <span class="subtitulo">NUESTRA HISTORIA</span>
+
+            <h2>
+                Más que café,<br>
+                <span>una experiencia.</span>
+            </h2>
+
+            <p>
+                Aroma & Grano nació del amor por el café colombiano
+                y de la pasión por crear momentos especiales.
+            </p>
+
+            <p>
+                Seleccionamos ingredientes de calidad, preparamos
+                cada bebida con dedicación y ofrecemos un espacio
+                acogedor para compartir con quienes más quieres.
+            </p>
+
+            <div class="historia-dato">
+                <span>✦</span>
+                <p>El sabor de Colombia en cada taza.</p>
+            </div>
+
+            <a href="#carta" class="btn">
+                Descubre nuestra carta
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- CARTA -->
+
+    <section id="carta" class="carta">
+
+        <div class="section-header">
+
+            <span class="subtitulo">SABORES QUE ENAMORAN</span>
+
+            <h2>Nuestra <span>carta</span></h2>
+
+            <p>
+                Preparado con amor, servido con pasión.
+            </p>
+
+        </div>
+
+        <!-- PESTAÑAS -->
+
+        <div class="tabs">
+
+            <button class="tab active" data-tab="cafes">
+                ☕ Cafés
+            </button>
+
+            <button class="tab" data-tab="frias">
+                🧊 Bebidas frías
+            </button>
+
+            <button class="tab" data-tab="panaderia">
+                🥐 Panadería
+            </button>
+
+            <button class="tab" data-tab="desayunos">
+                🍳 Desayunos
+            </button>
+
+        </div>
+
+        <!-- PRODUCTOS -->
+
+        <div class="productos">
+
+            <!-- CAFÉS -->
+
+            <div class="grupo active" id="cafes">
+
+                <div class="producto">
+
+<img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=700&q=80"
+     alt="Espresso">
+                    <div class="producto-info">
+                        <h3>Espresso</h3>
+                        <p>Café intenso, aromático y lleno de sabor.</p>
+
+                        <div class="producto-footer">
+                            <span>$5.000</span>
+                            <button class="pedir" data-producto="Espresso">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80"
+                        alt="Capuchino">
+
+                    <div class="producto-info">
+                        <h3>Capuchino</h3>
+                        <p>Espresso con leche cremosa y espuma.</p>
+
+                        <div class="producto-footer">
+                            <span>$8.000</span>
+                            <button class="pedir" data-producto="Capuchino">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80"
+                        alt="Latte">
+
+                    <div class="producto-info">
+                        <h3>Latte</h3>
+                        <p>Café suave con leche vaporizada.</p>
+
+                        <div class="producto-footer">
+                            <span>$9.000</span>
+                            <button class="pedir" data-producto="Latte">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BEBIDAS FRÍAS -->
+
+            <div class="grupo" id="frias">
+
+                <div class="producto">
+
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80"
+                        alt="Frappé">
+
+                    <div class="producto-info">
+                        <h3>Frappé de café</h3>
+                        <p>Café frío con hielo y crema.</p>
+
+                        <div class="producto-footer">
+                            <span>$12.000</span>
+                            <button class="pedir" data-producto="Frappé de café">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+
+<img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=700&q=80"
+     alt="Limonada natural">
+                    <div class="producto-info">
+                        <h3>Limonada natural</h3>
+                        <p>Refrescante limonada preparada al momento.</p>
+
+                        <div class="producto-footer">
+                            <span>$7.000</span>
+                            <button class="pedir" data-producto="Limonada natural">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+
+                    <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=700&q=80"
+                        alt="Jugo de naranja">
+
+                    <div class="producto-info">
+                        <h3>Jugo de naranja</h3>
+                        <p>Jugo natural recién exprimido.</p>
+
+                        <div class="producto-footer">
+                            <span>$8.000</span>
+                            <button class="pedir" data-producto="Jugo de naranja">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PANADERÍA -->
+
+            <div class="grupo" id="panaderia">
+
+                <div class="producto">
+
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80"
+                        alt="Croissant">
+
+                    <div class="producto-info">
+                        <h3>Croissant</h3>
+                        <p>Hojaldre dorado y mantequilloso.</p>
+
+                        <div class="producto-footer">
+                            <span>$6.000</span>
+                            <button class="pedir" data-producto="Croissant">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80"
+                        alt="Brownie">
+
+                    <div class="producto-info">
+                        <h3>Brownie</h3>
+                        <p>Delicioso brownie de chocolate.</p>
+
+                        <div class="producto-footer">
+                            <span>$7.000</span>
+                            <button class="pedir" data-producto="Brownie">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+
+                    <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80"
+                        alt="Cheesecake">
+
+                    <div class="producto-info">
+                        <h3>Cheesecake</h3>
+                        <p>Tarta cremosa con frutos rojos.</p>
+
+                        <div class="producto-footer">
+                            <span>$10.000</span>
+                            <button class="pedir" data-producto="Cheesecake">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- DESAYUNOS -->
+
+            <div class="grupo" id="desayunos">
+
+                <div class="producto">
+
+                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=700&q=80"
+                        alt="Desayuno tradicional">
+
+                    <div class="producto-info">
+                        <h3>Desayuno tradicional</h3>
+                        <p>Huevos, arepa, queso y café.</p>
+
+                        <div class="producto-footer">
+                            <span>$15.000</span>
+                            <button class="pedir" data-producto="Desayuno tradicional">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+
+                    <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=700&q=80"
+                        alt="Desayuno americano">
+
+                    <div class="producto-info">
+                        <h3>Desayuno americano</h3>
+                        <p>Huevos, tostadas y café.</p>
+
+                        <div class="producto-footer">
+                            <span>$18.000</span>
+                            <button class="pedir" data-producto="Desayuno americano">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="producto">
+
+                   
+<img src="https://rimibaltic-web-res.cloudinary.com/image/upload/c_fill,dpr_3.0,f_auto,h_640,q_auto,w_928/v1/web-cms/2b0d470a44d82f54bf1a58767f6b6f71ac90a329.jpg"
+     alt="Desayuno saludable con frutas, yogur y granola">
+
+                    <div class="producto-info">
+                        <h3>Desayuno saludable</h3>
+                        <p>Yogur, frutas frescas y granola.</p>
+
+                        <div class="producto-footer">
+                            <span>$16.000</span>
+                            <button class="pedir" data-producto="Desayuno saludable">Pedir ↗</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FRASE -->
+
+    <section class="frase">
+
+        <span>✦</span>
+
+        <h2>
+            "La vida comienza después<br>
+            de un buen café."
+        </h2>
+
+        <p>Aroma & Grano · Café de especialidad</p>
+
+    </section>
+
+    <!-- RESERVAS -->
+
+    <section id="reservas" class="reservas">
+
+        <div class="reserva-info">
+
+            <span class="subtitulo">TE ESPERAMOS</span>
+
+            <h2>
+                Reserva tu mesa<br>
+                <span>y disfruta.</span>
+            </h2>
+
+            <p>
+                Comparte un momento especial con amigos,
+                familia o simplemente contigo mismo.
+            </p>
+
+            <div class="reserva-beneficio">
+                <span>☕</span>
+                <p>Un espacio acogedor para todos.</p>
+            </div>
+
+            <div class="reserva-beneficio">
+                <span>✦</span>
+                <p>Experiencias llenas de sabor.</p>
+            </div>
+
+        </div>
+
+        <div class="reserva-formulario">
+
+            <h3>Reserva tu experiencia</h3>
+
+            <p>Completa los datos para reservar.</p>
+
+            <form id="formReserva">
+
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" required>
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" required>
+
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" required>
+
+                <label for="personas">Número de personas</label>
+                <input type="number" id="personas" min="1" max="10" required>
+
+                <button type="submit" class="btn">
+                    Confirmar reserva
+                </button>
+
+            </form>
+
+            <div id="resumenReserva"></div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="contacto">
+
+        <div class="section-header">
+
+            <span class="subtitulo">VEN A VISITARNOS</span>
+
+            <h2>Encuéntranos <span>aquí</span></h2>
+
+            <p>Será un placer recibirte.</p>
+
+        </div>
+
+        <div class="contacto-contenido">
+
+            <div class="contacto-info">
+
+                <h3>Aroma & Grano</h3>
+
+                <p>📍 Canalete, Córdoba, Colombia</p>
+
+                <p>📞 3205359482</p>
+
+                <p>✉️ aromaygrano@gmail.com</p>
+
+                <p>☕ Café colombiano, momentos inolvidables.</p>
+
+                <a href="https://www.google.com/maps/search/Canalete+C%C3%B3rdoba+Colombia"
+                    target="_blank" class="btn">
+                    Ver ubicación ↗
+                </a>
+
+            </div>
+
+            <div class="mapa">
+
+                <iframe
+                    src="https://maps.google.com/maps?q=Canalete%20Cordoba%20Colombia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    loading="lazy"
+                    title="Mapa de Canalete Córdoba">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ☕ Aroma & Grano
+        </div>
+
+        <p>El arte del buen café.</p>
+
+        <div class="footer-line"></div>
+
+        <p>© 2026 Aroma & Grano · Todos los derechos reservados.</p>
+
+    </footer>
+
+    <!-- WHATSAPP -->
+
+    <a href="#" class="whatsapp" id="whatsappGeneral" target="_blank">
+        WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
